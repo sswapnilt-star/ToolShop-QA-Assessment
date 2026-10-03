@@ -137,7 +137,19 @@ This repository contains the automation implementation and supporting assessment
 •	Defect findings
 •	Automated regression tests
 •	Test execution results
-12. Conclusion
+----------------------------------------------------
+Automated Regression Suite
+A focused UI regression suite was implemented for two critical workflows:
+New user registration
+Order completion without authentication
+
+The suite contains both positive and defect-detection coverage. The clean/reference build was used as the behavioral baseline, while the buggy build was used as the test target.
+
+Run all automated tests with one command:
+
+mvn test
+-------------------------------------------------------------------
+13. Conclusion
 The assessment demonstrates a risk-based QA approach combining:
 Manual testing + Reference-build comparison + API validation + UI automation + AI-assisted test design
 The objective was not only to identify defects, but also to create maintainable regression coverage that can detect recurrence of important application issues.
