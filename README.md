@@ -52,8 +52,9 @@ Metric	Result
 Total UI Test Cases Executed	28
 Passed	12
 Failed	13
+Defferred 3
 Pass Rate	42.86%
-3 Test cases deferred.The failed scenarios were investigated against the reference build to distinguish genuine application defects from expected behavior or test-data issues.
+The failed scenarios were investigated against the reference build to distinguish genuine application defects from expected behavior or test-data issues.
 Note: The pass/fail results represent the state of the application during the assessment execution.
 ________________________________________
 5. Automation
@@ -64,17 +65,6 @@ The automated regression suite is implemented using:
 •	TestNG
 •	Page Object Model
 •	WebDriver-based UI automation
-Project Structure
-.
-├── pom.xml
-├── src
-│   ├── main
-│   │   └── java
-│   └── test
-│       ├── java
-│       └── resources
-└── README.md
-The automation suite is designed to provide repeatable regression coverage for the application's critical user journeys.
 ________________________________________
 6. API Testing
 API testing was performed by comparing the clean and buggy API environments.
