@@ -34,6 +34,14 @@ Money & Quantity Validation
 •	Recalculation after quantity changes
 API Testing
 Selected REST API endpoints were compared between the buggy and clean environments to identify behavioral and contract differences.
+
+Testing Limitations / Out of Scope
+The following areas were intentionally not included in the assessment scope:
+-Exhaustive product/filter combinations
+-Full browser/device compatibility testing
+-Exhaustive API endpoint coverage
+-Cosmetic/low-risk UI issues
+-Tax, discount, voucher, and invoice functionality where those features were not available in both builds
 ________________________________________
 3. Test Approach
 The testing approach was based on risk-focused functional testing and buggy-vs-reference comparison.
@@ -53,7 +61,7 @@ Total UI Test Cases Executed	28
 Passed	12
 Failed	13
 Defferred 3
-Pass Rate	42.86%
+Pass Rate/Executed Pass rate(Including deferred)	42.86%/48%
 The failed scenarios were investigated against the reference build to distinguish genuine application defects from expected behavior or test-data issues.
 Note: The pass/fail results represent the state of the application during the assessment execution.
 ________________________________________
